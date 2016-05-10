@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.1.1602.1, Culture=neutral, PublicKeyToken=3751622786b357c2" />
+  <pnp:Templates ID="CONTAINER-REGISTER-USER-ACTION-INFRASTRUCTURE">
+    <pnp:ProvisioningTemplate ID="REGISTER-USER-ACTION-INFRASTRUCTURE" Version="1">
+      <pnp:Files>
+        <pnp:File Src="Custom-Script-Action.js" Folder="Style Library/Custom.Script.Action" Overwrite="true" />
+      </pnp:Files>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

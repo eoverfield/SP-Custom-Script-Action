@@ -1,0 +1,20 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.1.1602.0, Culture=neutral, PublicKeyToken=null">
+    <pnp:Parameters>
+      <pnp:Parameter Key="InfrastructureSiteUrl" Required="true" />
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-REGISTER-USER-ACTION-SCRIPT">
+    <pnp:ProvisioningTemplate ID="REGISTER-USER-ACTION-SCRIPT" Version="1">
+
+      <pnp:CustomActions>
+        <pnp:SiteCustomActions>
+          <pnp:CustomAction Name="RegisterUserScript" Location="ScriptLink" Sequence="0" Rights="" ScriptSrc="{parameter:InfrastructureSiteUrl}/Style Library/Custom.Script.Action/Custom-Script-Action.js">
+            <pnp:CommandUIExtension />
+          </pnp:CustomAction>
+        </pnp:SiteCustomActions>
+      </pnp:CustomActions>
+
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
